@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		9CF92A6726FB96D000CC6AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92A6626FB96D000CC6AE1 /* AppDelegate.swift */; };
 		9CF92A6926FB96D000CC6AE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92A6826FB96D000CC6AE1 /* SceneDelegate.swift */; };
-		9CF92A6B26FB96D000CC6AE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92A6A26FB96D000CC6AE1 /* ViewController.swift */; };
 		9CF92A6E26FB96D000CC6AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF92A6C26FB96D000CC6AE1 /* Main.storyboard */; };
 		9CF92A7126FB96D000CC6AE1 /* LiteNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92A6F26FB96D000CC6AE1 /* LiteNews.xcdatamodeld */; };
 		9CF92A7326FB96D200CC6AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF92A7226FB96D200CC6AE1 /* Assets.xcassets */; };
 		9CF92A7626FB96D200CC6AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF92A7426FB96D200CC6AE1 /* LaunchScreen.storyboard */; };
 		9CF92A8126FB96D200CC6AE1 /* LiteNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92A8026FB96D200CC6AE1 /* LiteNewsTests.swift */; };
 		9CF92A8C26FB96D200CC6AE1 /* LiteNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92A8B26FB96D200CC6AE1 /* LiteNewsUITests.swift */; };
+		9CF92AA126FB9B0000CC6AE1 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92AA026FB9B0000CC6AE1 /* AppTabBarController.swift */; };
+		9CF92AA426FB9B2600CC6AE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92AA326FB9B2600CC6AE1 /* HomeViewController.swift */; };
+		9CF92AA726FB9B3A00CC6AE1 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92AA626FB9B3A00CC6AE1 /* ExploreViewController.swift */; };
+		9CF92AAA26FB9B4B00CC6AE1 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92AA926FB9B4B00CC6AE1 /* FavoriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		9CF92A6326FB96D000CC6AE1 /* LiteNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiteNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF92A6626FB96D000CC6AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF92A6826FB96D000CC6AE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9CF92A6A26FB96D000CC6AE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CF92A6D26FB96D000CC6AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CF92A7026FB96D000CC6AE1 /* LiteNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LiteNews.xcdatamodel; sourceTree = "<group>"; };
 		9CF92A7226FB96D200CC6AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		9CF92A8726FB96D200CC6AE1 /* LiteNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiteNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF92A8B26FB96D200CC6AE1 /* LiteNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteNewsUITests.swift; sourceTree = "<group>"; };
 		9CF92A8D26FB96D200CC6AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CF92AA026FB9B0000CC6AE1 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		9CF92AA326FB9B2600CC6AE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9CF92AA626FB9B3A00CC6AE1 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		9CF92AA926FB9B4B00CC6AE1 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,11 @@
 		9CF92A6526FB96D000CC6AE1 /* LiteNews */ = {
 			isa = PBXGroup;
 			children = (
-				9CF92A6626FB96D000CC6AE1 /* AppDelegate.swift */,
-				9CF92A6826FB96D000CC6AE1 /* SceneDelegate.swift */,
-				9CF92A6A26FB96D000CC6AE1 /* ViewController.swift */,
+				9CF92A9C26FB9A8F00CC6AE1 /* Resources */,
+				9CF92A9B26FB9A8400CC6AE1 /* Base */,
+				9CF92A9A26FB9A7F00CC6AE1 /* App */,
+				9CF92A9926FB9A6C00CC6AE1 /* Menu */,
 				9CF92A6C26FB96D000CC6AE1 /* Main.storyboard */,
-				9CF92A7226FB96D200CC6AE1 /* Assets.xcassets */,
 				9CF92A7426FB96D200CC6AE1 /* LaunchScreen.storyboard */,
 				9CF92A7726FB96D200CC6AE1 /* Info.plist */,
 				9CF92A6F26FB96D000CC6AE1 /* LiteNews.xcdatamodeld */,
@@ -129,6 +135,89 @@
 				9CF92A8D26FB96D200CC6AE1 /* Info.plist */,
 			);
 			path = LiteNewsUITests;
+			sourceTree = "<group>";
+		};
+		9CF92A9926FB9A6C00CC6AE1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9CF92A9F26FB9AA900CC6AE1 /* Favorite */,
+				9CF92A9E26FB9AA400CC6AE1 /* Explore */,
+				9CF92A9D26FB9A9E00CC6AE1 /* Home */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		9CF92A9A26FB9A7F00CC6AE1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9CF92A6626FB96D000CC6AE1 /* AppDelegate.swift */,
+				9CF92A6826FB96D000CC6AE1 /* SceneDelegate.swift */,
+				9CF92AA026FB9B0000CC6AE1 /* AppTabBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9CF92A9B26FB9A8400CC6AE1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9CF92A9C26FB9A8F00CC6AE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CF92A7226FB96D200CC6AE1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CF92A9D26FB9A9E00CC6AE1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9CF92AA226FB9B1100CC6AE1 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9CF92A9E26FB9AA400CC6AE1 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				9CF92AA526FB9B3000CC6AE1 /* Views */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		9CF92A9F26FB9AA900CC6AE1 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				9CF92AA826FB9B3D00CC6AE1 /* Views */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		9CF92AA226FB9B1100CC6AE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CF92AA326FB9B2600CC6AE1 /* HomeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CF92AA526FB9B3000CC6AE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CF92AA626FB9B3A00CC6AE1 /* ExploreViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CF92AA826FB9B3D00CC6AE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CF92AA926FB9B4B00CC6AE1 /* FavoriteViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +350,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF92AA426FB9B2600CC6AE1 /* HomeViewController.swift in Sources */,
 				9CF92A7126FB96D000CC6AE1 /* LiteNews.xcdatamodeld in Sources */,
-				9CF92A6B26FB96D000CC6AE1 /* ViewController.swift in Sources */,
+				9CF92AA726FB9B3A00CC6AE1 /* ExploreViewController.swift in Sources */,
+				9CF92AAA26FB9B4B00CC6AE1 /* FavoriteViewController.swift in Sources */,
 				9CF92A6726FB96D000CC6AE1 /* AppDelegate.swift in Sources */,
+				9CF92AA126FB9B0000CC6AE1 /* AppTabBarController.swift in Sources */,
 				9CF92A6926FB96D000CC6AE1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VL5UA77DJ;
 				INFOPLIST_FILE = LiteNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anugrahdev.LiteNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,6 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VL5UA77DJ;
 				INFOPLIST_FILE = LiteNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anugrahdev.LiteNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
