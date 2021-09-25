@@ -9,4 +9,5 @@ import Foundation
 
 struct Constants {
     static let BASE_URL = "https://newsapi.org/v2/"
+    static let CATEGORIES = ["Technology", "Sports", "Business", "Science", "Health", "Entertainment"]
 }

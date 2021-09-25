@@ -45,7 +45,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.frame.size.width / 2
+        return view.frame.size.width / 3.8
     }
     
 }
+
+#if DEBUG
+import SwiftUI
+
+@available(iOS 13, *)
+struct HomeViewController_Preview: PreviewProvider {
+    static var previews: some View {
+        // view controller using programmatic UI
+        HomeViewController().showPreview()
+    }
+}
+#endif

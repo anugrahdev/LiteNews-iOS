@@ -9,18 +9,12 @@ import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
     
-    let colors: [UIColor] = [
-        .systemRed,
-        .systemBlue,
-        .systemTeal,
-        .systemOrange,
-        .systemPink
-    ]
+    let categories = Constants.CATEGORIES
     
     private lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.sectionInset = UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 5)
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20)
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.register(ItemCategoryCollectionViewCell.self, forCellWithReuseIdentifier: "ItemCategoryCollectionViewCell")
         collection.backgroundColor = .systemBackground
@@ -50,18 +44,32 @@ class CategoryTableViewCell: UITableViewCell {
 
 extension CategoryTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        colors.count
+        categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCategoryCollectionViewCell", for: indexPath) as! ItemCategoryCollectionViewCell
-        cell.configure(colors[indexPath.row])
+        cell.configure(categories[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = contentView.frame.size.width / 2.6
-        return CGSize(width: width, height: width / 1.4)
+        let width = contentView.frame.size.width / 3.2
+        return CGSize(width: width, height: width / 1.8)
     }
     
 }
+
+#if DEBUG
+import SwiftUI
+
+@available(iOS 13, *)
+struct CryptoTableViewCell_Preview: PreviewProvider {
+    static var previews: some View {
+        // view controller using programmatic UI
+        CategoryTableViewCell().showPreview()
+            .previewLayout(.sizeThatFits)
+            .frame(width: 500, height: 200, alignment: .center)
+    }
+}
+#endif

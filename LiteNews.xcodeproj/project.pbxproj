@@ -23,6 +23,8 @@
 		9CAAC16126FC3FED00617F1F /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAAC16026FC3FED00617F1F /* NewsRepository.swift */; };
 		9CAAC16426FC4D3B00617F1F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAAC16326FC4D3B00617F1F /* HomeViewModel.swift */; };
 		9CAAC16626FC57CC00617F1F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAAC16526FC57CC00617F1F /* BaseViewModel.swift */; };
+		9CAF79B926FF2C7B00C8353C /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF79B826FF2C7B00C8353C /* UIViewController+Extensions.swift */; };
+		9CAF79BB26FF2C9200C8353C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF79BA26FF2C9200C8353C /* UIView+Extensions.swift */; };
 		9CF92A6726FB96D000CC6AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92A6626FB96D000CC6AE1 /* AppDelegate.swift */; };
 		9CF92A6926FB96D000CC6AE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF92A6826FB96D000CC6AE1 /* SceneDelegate.swift */; };
 		9CF92A6E26FB96D000CC6AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF92A6C26FB96D000CC6AE1 /* Main.storyboard */; };
@@ -74,6 +76,8 @@
 		9CAAC16026FC3FED00617F1F /* NewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepository.swift; sourceTree = "<group>"; };
 		9CAAC16326FC4D3B00617F1F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9CAAC16526FC57CC00617F1F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		9CAF79B826FF2C7B00C8353C /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		9CAF79BA26FF2C9200C8353C /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		9CF92A6326FB96D000CC6AE1 /* LiteNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiteNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF92A6626FB96D000CC6AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF92A6826FB96D000CC6AE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +187,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		9CAF79B726FF2C6100C8353C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9CAF79B826FF2C7B00C8353C /* UIViewController+Extensions.swift */,
+				9CAF79BA26FF2C9200C8353C /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9CF92A5A26FB96D000CC6AE1 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +221,7 @@
 		9CF92A6526FB96D000CC6AE1 /* LiteNews */ = {
 			isa = PBXGroup;
 			children = (
+				9CAF79B726FF2C6100C8353C /* Extensions */,
 				9CAAC15326FC29C200617F1F /* Data */,
 				9CAAC14A26FC258400617F1F /* Services */,
 				9CF92A9C26FB9A8F00CC6AE1 /* Resources */,
@@ -586,12 +600,14 @@
 				9CAAC15526FC29CC00617F1F /* Constants.swift in Sources */,
 				9CAAC14F26FC27C300617F1F /* HeadlinesBaseModel.swift in Sources */,
 				9CF92A7126FB96D000CC6AE1 /* LiteNews.xcdatamodeld in Sources */,
+				9CAF79B926FF2C7B00C8353C /* UIViewController+Extensions.swift in Sources */,
 				9CAAC15B26FC351700617F1F /* APIConfiguration.swift in Sources */,
 				9CAAC15D26FC38F200617F1F /* NewsEndpoints.swift in Sources */,
 				9C4CE6D226FCE48300BB3AA3 /* ItemCategoryCollectionViewCell.swift in Sources */,
 				9CAAC15F26FC3A8600617F1F /* HeadlinesRequest.swift in Sources */,
 				9CF92AA726FB9B3A00CC6AE1 /* ExploreViewController.swift in Sources */,
 				9CF92AAA26FB9B4B00CC6AE1 /* FavoriteViewController.swift in Sources */,
+				9CAF79BB26FF2C9200C8353C /* UIView+Extensions.swift in Sources */,
 				9CF92A6726FB96D000CC6AE1 /* AppDelegate.swift in Sources */,
 				9CAAC15126FC27D500617F1F /* ArticleModel.swift in Sources */,
 				9CAAC16126FC3FED00617F1F /* NewsRepository.swift in Sources */,
