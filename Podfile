@@ -11,6 +11,7 @@ target 'LiteNews' do
   pod 'RxCocoa'
   pod 'SnapKit'
   pod 'Kingfisher'
+  pod 'RxAlamofire'
 
   target 'LiteNewsTests' do
     inherit! :search_paths

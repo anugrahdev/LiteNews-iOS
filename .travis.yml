@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode12.5
+xcode_workspace: LiteNews.xcworkspace
+xcode_scheme: LiteNews
+xcode_destination: platform=iOS Simulator,OS=14.1,name=iPhone 11
+before_install:
+- pod install
